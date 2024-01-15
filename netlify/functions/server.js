@@ -11,10 +11,10 @@ app.get('/', (req, res) => {
 });
 */
 
-router.get('/', (req, res) => {
+router.get('/hello', (req, res) => {
     res.send("Hello world");
 });
 
-app.use('/api/', router);
+app.use('/app/', router);
 
 export const handler = serverless(app);
