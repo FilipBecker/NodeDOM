@@ -17,3 +17,10 @@ const classNameElements = document.getElementsByClassName('example');
 console.log(classNameElements)
 
 console.log('querySelektor');
+const pN = document.getElementById('parentNode');
+let QSelement = pN.querySelector('[style]');
+console.log(QSelement);
+
+console.log('querySelectorAll');
+const AllElements = document.querySelectorAll('*');
+console.log(AllElements);
